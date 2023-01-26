@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282D35;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-items > li {
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  background-color: #21222A;
+}
+
+.navbar > h2 {
+  color: #DEEBF8;
+  font-weight: 600;
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.navbar-left > img {
+  height: 50px;
+  padding-right: 10px;
+}
+
+.navbar-left > h1 {
+  color: #61DAFB;
+}
+
+.main-class {
+  padding: 10px 40px;
+  color: #FFFFFF;
+  background-image: url(./reactjs-icon.png);
+  background-repeat: no-repeat;
+  background-position: right 75%;
+}
+
+.main-class > h1 {
+  font-size: 36px;
+  letter-spacing: -0.05em;
+}
+
+.main-class > ul li {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
+}
