@@ -31,3 +31,31 @@ code {
   width: 25px;
   margin-right: 5px;
 }
+
+.card--main {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card--image {
+  width: 220px;
+  height: 240px;
+}
+
+.card--detail-header {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.card--detail-header-pin {
+  width: 10px;
+  height: 15px;
+}
+
+.card--detail-description {
+  width: 600px;
+}
