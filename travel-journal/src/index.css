@@ -40,22 +40,53 @@ code {
   justify-content: center;
 }
 
+.card--detail {
+  margin-left: 20px;
+}
+
 .card--image {
+  object-fit: cover;
   width: 220px;
-  height: 240px;
+  height: 260px;
+  border-radius: 10px;
 }
 
 .card--detail-header {
   display: flex;
   flex-direction: row;
-  margin: 5px;
+  margin-bottom: 5px;
+}
+
+.card--detail-header-div {
+  display: flex;
+  align-items: center;
+  font-variant: small-caps;
 }
 
 .card--detail-header-pin {
+  align-items: center;
   width: 10px;
-  height: 15px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.card--detail-header-location {
+  margin-right: 10px;
+}
+
+.card--detail-place {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.card--detail-duration {
+  margin-bottom: 6px;
 }
 
 .card--detail-description {
-  width: 600px;
+  width: 450px;
+}
+
+a:visited, a {
+  color: gray;
 }

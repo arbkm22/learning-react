@@ -9,9 +9,11 @@ function Card(props) {
             </div>
             <div className="card--detail">
                 <div className="card--detail-header">
+                    <div className="card--detail-header-div">
                     <img src={pin} className="card--detail-header-pin"></img>
                     <p className="card--detail-header-location">{props.country}</p>
-                    <a className="card--detail-header-place" href={props.mapLink}>View on Google Maps</a>
+                    </div>
+                    <a className="card--detail-header-place" href={props.mapLink} target="_blank">View on Google Maps</a>
                 </div>
                 <div className="card--detail-place">
                     <h2>{props.place}</h2>

@@ -15,7 +15,7 @@ function App() {
                 endDate = {location.endDate}
                 description = {location.description}
             />
-        ) 
+        );
     })
     return (
         <div className="App">
