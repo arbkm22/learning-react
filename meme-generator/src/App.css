@@ -66,7 +66,7 @@
 }
 
 .meme {
-  margin: 80px 400px;
+  margin: 40px 400px;
 }
 
 .meme-input-form {
@@ -102,6 +102,49 @@
 }
 
 .meme-image {
-  width: 100%;
-  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.meme--image {
+  display: flex;
+  width: 90%;
+  height: 600px;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.counter--count {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.counter--count h1 {
+  font-size: 56px;
+  padding-top: 25px;
+}
+
+.counter--minus {
+  font-size: 30px;
+  margin-top: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.counter--plus {
+  font-size: 30px;
+  margin-top: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
