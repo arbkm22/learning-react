@@ -16,7 +16,7 @@ const jokesList =  [
         punchline: "Swarm!"
     },
     {
-        setup: "",
+        setup: "  ",
         punchline: "It's hard to explain puns to kleptomaniacs because they always take things literally"
     }
 ]
