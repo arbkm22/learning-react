@@ -6,10 +6,21 @@ function Meme() {
     function getMemeImage() {
         let memesArray = memesData.data.memes;
         const randomNumber = Math.floor(Math.random() * memesArray.length);
-        setMemeImage(memesArray[randomNumber].url);
+        setMemeImage(prev => {
+            return {
+                ...prev,
+                randomImage: memesArray[randomNumber].url
+            }
+        });
     }
 
-    const [memeImage, setMemeImage] = useState("");
+    const [memeImage, setMemeImage] = useState({
+        topText: "",
+        bottomText: "",
+        randomImage: "https://i.imgflip.com/30b1gx.jpg"
+    });
+
+    const [allMemeImages, setAllMemeImages] = useState(memesData);
  
     return (
         <div className="meme">
@@ -29,7 +40,7 @@ function Meme() {
                 <button className="meme-button" onClick={getMemeImage}>Get a new meme image</button>
             </div>
             <div className="meme-image">
-                <img src={memeImage} alt="meme" className="meme--image"/>
+                <img src={memeImage.randomImage} alt="meme" className="meme--image"/>
             </div>
         </div>
         
