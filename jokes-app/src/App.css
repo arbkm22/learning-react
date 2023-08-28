@@ -30,11 +30,32 @@
   color: #61dafb;
 }
 
+input {
+  border-radius: 2px;
+  border: solid 2px lightgray;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+}
+
+textarea {
+  border: solid 2px lightgray;
+  padding: 10px;
+  margin: 10px;
+  width: 600px;
+  height: 100px;
+}
+
+.isFriendly {
+  padding: 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  
   }
 }
