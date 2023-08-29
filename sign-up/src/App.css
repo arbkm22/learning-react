@@ -1,38 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
+  margin: 20px 550px;
+  border-radius: 10px;
+  background-color: white;
+  height: 360px;
+  /* width: 400px; */
+}
+
+.BoxCard {
+  /* margin-top: 30px; */
+  padding-top: 40px;  
+}
+
+.FormInput {
+  flex-direction: column;
+  /* padding: 20px; */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.FormInput > input {
+  height: 40px;
+  padding: 0px 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.CheckBox {
+  /* display: flex; */
+  margin-top: 6px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.submitButton {
+  text-align: center;
+}
+
+.submitButton > button {
+  margin-top: 20px;
+  width: 80px;
+  height: 30px;
+  background-color: blueviolet;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: 2px solid black;
+  border-radius: 4px;
 }
