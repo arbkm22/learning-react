@@ -21,19 +21,33 @@ function Meme() {
     });
 
     const [allMemeImages, setAllMemeImages] = useState(memesData);
+
+    function handleChange(event) {
+        const { name, value } = event.target;
+        setMemeImage(prev => {
+            return {
+                ...prev,
+                [name]: value
+            }
+        })
+    }
  
     return (
         <div className="meme">
             <div className="meme-input-form">
                 <input 
                     type="text" 
-                    name="top-text" 
+                    name="topText" 
                     placeholder="Top text"
+                    value={memeImage.topText}
+                    onChange={handleChange}
                     className="meme-top-text meme-text" />
                 <input 
                     type="text" 
-                    name="bottom-text" 
+                    name="bottomText" 
                     placeholder="Bottom text"
+                    value={memeImage.bottomText}
+                    onChange={handleChange}
                     className="meme-bottom-text meme-text"/>
             </div>
             <div className="meme-input-button">
@@ -41,6 +55,12 @@ function Meme() {
             </div>
             <div className="meme-image">
                 <img src={memeImage.randomImage} alt="meme" className="meme--image"/>
+                <div className="topOverlay">
+                    {memeImage.topText}
+                </div>
+                <div className="bottomOverlay">
+                    {memeImage.bottomText}
+                </div>
             </div>
         </div>
         
