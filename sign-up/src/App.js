@@ -25,6 +25,8 @@ function App() {
         console.log('formdata: ', formData);
         if (formData.password === formData.cnfpass)
             console.log('successfully signed up');
+        else 
+            console.log('passwords do not match');
         if (formData.newsletter)
             console.log('subscribed');
     }
