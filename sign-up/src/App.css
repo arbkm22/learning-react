@@ -3,22 +3,25 @@
 }
 
 .App {
-  margin: 20px 550px;
-  border-radius: 10px;
-  background-color: white;
-  height: 360px;
-  /* width: 400px; */
+  height: 100vh;
+  background-color:purple;
+  display: grid;
+  place-items: center;
+  /* border-radius: 10px; */
 }
 
 .BoxCard {
   /* margin-top: 30px; */
-  padding-top: 40px;  
+  /* padding-top: 40px;   */
+  padding: 50px 45px;
+  background-color: white;
+  border-radius: 8px;
 }
 
 .FormInput {
   flex-direction: column;
   /* padding: 20px; */
-  text-align: center;
+  /* text-align: center; */
 }
 
 .FormInput > input {
@@ -30,8 +33,14 @@
 }
 
 .CheckBox {
-  /* display: flex; */
-  margin-top: 6px;
+  display: flex;
+  margin-top: 8px;
+  width: 200px;
+  padding-left: 10px;
+}
+.CheckBox > label {
+  padding-left: 6px;
+  font-weight: 600;
 }
 
 .submitButton {
@@ -39,10 +48,12 @@
 }
 
 .submitButton > button {
+  /* margin-top: 20px; */
   margin-top: 20px;
-  width: 80px;
-  height: 30px;
-  background-color: blueviolet;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  background-color: rgb(75, 9, 138);
   color: white;
   border: 2px solid black;
   border-radius: 4px;
