@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Jokes from './components/Jokes';
 import jokesList from './components/jokesData';
@@ -18,10 +18,6 @@ function App() {
         isFriendly: true
     });
 
-    console.log('isFriendly: ', formData.isFriendly);
-
-    console.log('formdata: ', formData);
-
     function handleChange(event) {
         const {name, value, type, checked} = event.target;
         setFormData(prevData => {
@@ -36,6 +32,22 @@ function App() {
         event.preventDefaults();
         console.log('formData: ', formData);
     }
+
+    // useEffect
+    const [starWarsData, setStarWardsData] = useState("");
+    const [count, setCount] = useState(1);
+
+    useEffect(() => {
+        console.log('Effect fucntion ran');
+        fetch(`https://swapi.dev/api/people/${count}`)
+            .then(res => res.json())
+            .then(data => setStarWardsData(data));
+    }, [count]);
+
+    function handleAdd() {
+       setCount(prevCount => prevCount + 1);
+    }
+
 
   return (
     <div>
@@ -82,6 +94,14 @@ function App() {
 
             <button>Submit</button>
         </form>
+        <hr />
+        <div>
+            <h2>
+                <pre>{JSON.stringify(starWarsData, null, 2)}</pre>
+            </h2>
+            <h1>The count is {count}</h1>
+            <button onClick={handleAdd}>Get New Character</button>
+        </div>
     </div>
   );
 }
