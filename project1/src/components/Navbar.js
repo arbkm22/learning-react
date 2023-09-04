@@ -12,7 +12,7 @@ function Navbar(props) {
                 <p className="toggler--light">Light</p>
                 <div 
                     className="toggler--slider" 
-                    onClick={props.toggleDarkMode}
+                    onClick={props.handleClick}
                 >
                     <div className="toggler--slider--circle"></div>
                 </div>

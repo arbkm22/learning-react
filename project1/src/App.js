@@ -7,9 +7,16 @@ function App() {
 
     const [darkMode, setDarkMode] = useState(false);
 
+    function toggleDarkMode() {
+        setDarkMode(prev => {
+            return !prev;
+        });
+        console.log('darkMode: ', darkMode);
+    }
+
     return (
         <div className="container">
-            <Navbar mode={darkMode} />
+            <Navbar mode={darkMode} handleClick={() => toggleDarkMode()} />
             <Main mode={darkMode} />            
         </div>
     )
