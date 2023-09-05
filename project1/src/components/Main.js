@@ -1,6 +1,6 @@
-function Main() {
+function Main(props) {
     return (
-        <div className="main-class">
+        <main className={props.mode ? "dark" : ""}>
             <h1>Fun facts about React</h1>
             <ul className="main--facts">
                 <li>Was first released in 2013</li>
@@ -9,7 +9,7 @@ function Main() {
                 <li>Is maintained by Facebook</li>
                 <li>Powers thousands of enterprise apps, including <br></br>mobile apps</li>
             </ul>
-        </div>
+        </main>
     )
 }
 

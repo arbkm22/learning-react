@@ -11,12 +11,11 @@ function App() {
         setDarkMode(prev => {
             return !prev;
         });
-        console.log('darkMode: ', darkMode);
     }
 
     return (
         <div className="container">
-            <Navbar mode={darkMode} handleClick={() => toggleDarkMode()} />
+            <Navbar mode={darkMode} handleClick={toggleDarkMode} />
             <Main mode={darkMode} />            
         </div>
     )
